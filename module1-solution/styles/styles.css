@@ -1,0 +1,14 @@
+.message{
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: thin;
+    text-align: center;
+    border-radius: 0.1%;
+}
+.note{
+    background-color: #DFDFE5;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 2%;
+}
