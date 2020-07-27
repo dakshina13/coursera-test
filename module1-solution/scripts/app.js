@@ -10,7 +10,6 @@ function LunchCheckController($scope){
     var filteredItems=[];
     $scope.sayMessage=function (){
         initialize();
-        console.log(filteredItems.length);
         splitString($scope.inpString);
         removeNull();
         var r=resultString();
@@ -30,7 +29,6 @@ function LunchCheckController($scope){
                     filteredItems.push(items[i]);
           }
         }
-        console.log(filteredItems);
     }
     function resultString(){
         var x=filteredItems.length;
