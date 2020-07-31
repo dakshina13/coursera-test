@@ -1,0 +1,39 @@
+.emptyMessage {
+    font-weight: bold;
+    color: red;
+    font-size: 1.2em;
+    list-style: none;
+  }
+  li {
+    margin-bottom: 7px;
+    font-size: 1.2em;
+  }
+  li > button {
+    margin-left: 6px;
+  }
+  button > span {
+    color: green;
+  }
+  table, th, td {
+    border: 2px solid #C3FEFF;
+    border-collapse: collapse;
+  }
+  th,#slno{
+    text-align: center;
+  }
+  td,th{
+    padding:10px ;
+  }
+  th{
+    background-color: #C3FEFF;
+  }
+  tr:nth-child(odd){
+    background-color: #E9FFFF;
+    border: 1px solid white;
+  }
+  table{
+    width: 100%;
+  }
+  #bought_button{
+    text-align: center;
+  }
