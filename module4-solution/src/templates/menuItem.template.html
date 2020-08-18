@@ -1,0 +1,12 @@
+<div>
+<table>
+    <tr ng-repeat="item in $ctrl.items">
+        <td>
+            <button class="custom-button b1 b2" ng-click="$ctrl.changeItemState($index)">
+                {{ item.name }}
+            </button>
+            <div ng-class="{'descriptionHidden':!$ctrl.clickCounter[$index],'descriptionShow':$ctrl.clickCounter[$index]}" ng-click="$ctrl.changeItemState($index)">{{item.description}}</div>
+        </td>
+    </tr>
+</table>
+</div>

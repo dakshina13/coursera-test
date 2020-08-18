@@ -1,0 +1,10 @@
+<table>
+    <tr ng-repeat="item in $ctrl.items">
+        <td>
+            <button class="custom-button b1 b2" ui-sref="menuItem({shortName: item.column_1.short_name})" ng-click="$ctrl.spinnerShow()"> {{ item.column_1.name }} </button>
+        </td>
+        <td>
+            <button class="custom-button b1 b2" ui-sref="menuItem({shortName: item.column_2.short_name})" ng-click="$ctrl.spinnerShow()"> {{ item.column_2.name }} </button>
+        </td>
+    </tr>
+</table>

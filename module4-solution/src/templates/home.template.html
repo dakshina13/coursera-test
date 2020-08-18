@@ -1,0 +1,9 @@
+<div class="view-container">
+    <div ng-hide="!homeCtrl.showHome">
+        <h3>To view the categories offered by our restaurant click on the button below</h3>
+        <button class ="custom-button"ui-sref="categories" ng-click="homeCtrl.onShowSpinner()">Click here to show the List of categories</button>
+    </div>
+    <div>
+        <loading-spinner></loading-spinner>
+    </div>
+</div>

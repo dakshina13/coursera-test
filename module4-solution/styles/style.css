@@ -1,0 +1,79 @@
+h1{
+    text-align: center;
+}
+.container{
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+}
+.view-container{
+    background-image: url("backgroundT.jpg");
+    padding: 5%;
+    border-radius: 25px;
+}
+p{
+    color: #000000;
+}
+ui-view{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+body{
+    background-image: url("background.jpg");
+    background-repeat: repeat-y; 
+    background-size: cover;
+}
+.custom-button{
+    background-color: #f4a460;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size:16px;
+    padding: 15px 32px;
+    border-radius: 10px;
+}
+.custom-button:hover {
+    cursor: pointer;
+    background-color: #f78423;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.151)
+  }
+.b1:hover{
+    border:black;
+}
+.b2{
+    margin-top: 10px;
+    width: 100%;
+}
+table{
+    width: 100%;
+}
+tr{
+    width: 50%;
+}
+.tab{
+    background-color: #f4a460;
+    border-radius: 10px;
+}
+.active {
+    background-color: #f77302;
+}
+.active:hover{
+    background-color: #f77302;
+    cursor: default;
+    box-shadow: none;
+}
+.descriptionHidden{
+    display: none;
+}
+.descriptionShow{
+    padding: 5px;
+    display: block;
+    background-color: #e6b081;
+    border-radius: 10px;
+}
+.descriptionShow:hover{
+    cursor: pointer;
+}

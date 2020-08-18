@@ -1,0 +1,12 @@
+<div class="view-container">
+    <div ng-hide="!catCtrl.showHome">
+        <div class="tab">
+            <button class="custom-button"ui-sref="home">Home</button> 
+            &lt; 
+            <button class="custom-button active">Category</button>
+        </div>
+        <h3>Category</h3>
+        <category items="catCtrl.items" spinner-show="catCtrl.onShowSpinner()"></category>
+    </div>
+    <loading-spinner></loading-spinner>
+</div>

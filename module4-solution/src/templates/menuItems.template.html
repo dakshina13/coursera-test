@@ -1,0 +1,11 @@
+<div class="view-container">
+    <div class="tab">
+        <button class="custom-button b1" ui-sref="home">Home</button> 
+        &lt; 
+        <button class="custom-button b1" ui-sref="categories">Category</button>
+        &lt;
+        <button class="custom-button active">{{ menuCtrl.category }}</button>
+    </div>
+    <h3>Menu for category {{ menuCtrl.category }}</h3>
+    <menu-item items="menuCtrl.items"></menu-item>
+</div>
