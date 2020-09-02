@@ -8,8 +8,5 @@
     function FavController(ApiPath){
         var $ctrl=this;
         $ctrl.basePath = ApiPath;
-        $ctrl.$onInit=function(){
-            console.log("Menu Item",$ctrl.menuItem);
-        };
     }
 })();

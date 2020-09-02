@@ -19,7 +19,6 @@
 
         service.setMyInfo=function(user){
             _user=user;
-            console.log("User ",user);
         };
 
         service.getMyInfo=function(){

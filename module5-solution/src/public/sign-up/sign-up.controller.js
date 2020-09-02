@@ -21,9 +21,7 @@
             var x=[];
             var p=MenuService.getFavMenu($ctrl.user.favDish);
             p.then(function(response){
-                console.log("Response ",response);
                 $ctrl.user.menuItem=response;
-                console.log("$ctrl.user.menuItem====",$ctrl.user.menuItem);
             });
             
             MyInfoService.setMyInfo($ctrl.user);
