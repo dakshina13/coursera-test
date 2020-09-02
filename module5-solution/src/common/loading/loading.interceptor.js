@@ -32,7 +32,7 @@ function LoadingHttpInterceptor($rootScope, $q) {
       if (--loadingCount === 0) {
         $rootScope.$broadcast(loadingEventName, {on: false});
       }
-
+      
       return response;
     },
 
@@ -40,7 +40,7 @@ function LoadingHttpInterceptor($rootScope, $q) {
       if (--loadingCount === 0) {
         $rootScope.$broadcast(loadingEventName, {on: false});
       }
-
+     
       return $q.reject(response);
     }
   };

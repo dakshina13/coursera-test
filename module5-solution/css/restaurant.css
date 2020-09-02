@@ -15,7 +15,23 @@ body {
   border-radius: 0;
   border: 0;
 }
-
+.info-container,.signup-container{
+  background-color: #f6b319;
+  border-radius: 10px;
+  padding:2%;
+  text-align: center;
+}
+.restaurant-button{
+  background-color: #61122f;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size:16px;
+  padding: 15px 32px;
+  border-radius: 10px;
+  margin-left: 5%;
+}
 #logo-img {
   background: url('../images/restaurant-logo_large.png') no-repeat;
   width: 150px;
@@ -199,4 +215,16 @@ a[ui-sref="admin.auth"] {
     font-size: 6vw;
   }
   /* End Header */
+}
+.signup-form{
+  color: #000;
+}
+.error{
+  color: #ff0000;
+}
+.signup-button{
+  margin-left: 0%;
+}
+.fav-container{
+  text-align: center;
 }

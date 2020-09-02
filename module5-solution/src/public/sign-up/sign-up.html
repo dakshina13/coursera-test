@@ -1,0 +1,84 @@
+<div class="container signup-container">
+    <div ng-if="signCtrl.signUp"> Sign Up successful!!!!</div>
+    <fieldset ng-disabled="signCtrl.signUp">
+        <legend>Sign Up</legend>
+        <form name='signUpForm' class="signup-form" novalidate>
+            <span>
+                First Name
+            </span>
+        <br>
+            <input type="text" name="firstname" 
+                placeholder="Enter Your First Name"
+                ng-model="signCtrl.user.firstname"
+                required
+                >
+        <br>
+            <span class="error" ng-if="(signUpForm.firstname.$error.required && signUpForm.firstname.$touched)">
+                    Please Enter First name
+            </span>
+        <br>
+            <span>
+                Last Name
+            </span>
+        <br>
+            <input type="text" name="lastname" 
+                placeholder="Enter Your Last Name"
+                ng-model="signCtrl.user.lastname"
+                required
+                >
+        <br>
+            <span class="error" ng-if="(signUpForm.lastname.$error.required && signUpForm.lastname.$touched)">
+                    Please Enter last name
+            </span>
+        <br>
+            <span>
+                Email
+            </span>
+        <br>
+            <input type="email" name="email" placeholder="Email"
+                 ng-model="signCtrl.user.email"
+                 required
+                 >
+        <br>
+            <span class="error" ng-if="signUpForm.email.$invalid && signUpForm.email.$touched">
+                Must be a valid email address: handle@domain format
+            </span>
+        <br>
+            <span>
+                Phone
+            </span>
+        <br>
+            <input type="text" name="phone" placeholder="Phone ###-###-####"
+                ng-model="signCtrl.user.phone"
+                pattern="(\d{3})-(\d{3})-(\d{4})"
+                required
+                >
+        <br>
+            <span class="error" ng-if="(signUpForm.phone.$invalid || signUpForm.phone.$error.required)&& signUpForm.phone.$touched">
+                Phone must be in the format ###-###-####.
+            </span>
+        <br>
+            <span>
+                Favourite Dish
+            </span>
+        <br>
+            <input type="text" 
+            name="favDish" 
+            placeholder="Please enter the Short Name of category"
+            ng-model="signCtrl.user.favDish"
+            required
+            >
+        <br>
+            <span class="error" ng-if="signUpForm.favDish.$error.required && signUpForm.favDish.$touched"> Please enter Short Name</span>
+            <span class="error" ng-if="signCtrl.serverError">No such menu number exists</span>
+        <br>
+            <button ng-disabled="signUpForm.$invalid"
+                ng-click="signCtrl.updateInfo()"
+                class="restaurant-button signup-button"
+                >
+            Sign Up
+            </button>
+        </form>
+    </fieldset>
+    <fav-item menu-item="signCtrl.user.menuItem" ng-show="signCtrl.signUp"></fav-item>
+</div>
